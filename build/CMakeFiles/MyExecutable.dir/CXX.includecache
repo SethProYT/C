@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/C/main.cpp
+iostream
+-
+themind.hpp
+/workspaces/C/themind.hpp
+
+/workspaces/C/themind.hpp
+iostream
+-
+random
+-
+vector
+-
+string
+-
+cctype
+-
+

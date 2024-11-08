@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/C/build",
+  "command": "/usr/bin/g++   -I/workspaces/C/include  -g   -std=gnu++17 -o CMakeFiles/MyExecutable.dir/main.cpp.o -c /workspaces/C/main.cpp",
+  "file": "/workspaces/C/main.cpp"
+}
+]
