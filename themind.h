@@ -32,7 +32,7 @@ void rnpns(char *mv) {
 
     capitalizer(mod, ans);
 
-    switch(ans[0]) {
+    switch(mod[0]) {
         case 'R':
             if (r == 3) {
                 printf("dang you won gg\n");
@@ -56,7 +56,15 @@ void rnpns(char *mv) {
             }
             break;
         case 'S':
-            // Handle scissors case
+            if (r == 1) {
+                printf("rock smashes scissors i win\n");
+            }
+            else if (r == 2) {
+                printf("scissors cut paper you win\n");
+            }
+            else if (r == 3) {
+                printf("it's a tie");
+            }
             break;
         default:
             printf("Invalid input\n");

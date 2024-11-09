@@ -19,10 +19,10 @@ int main() {
     capitalizer(moddedanswer, ans);
     printf("%s\n", moddedanswer);
 
-    if (strstr(moddedanswer, "WHAT'S YOUR AGE?")) {
+    if (strstr(moddedanswer, "WHAT'S YOUR AGE")) {
         printf("I am 13, as of November 7, 2024!\n");
     }
-    else if (strstr(moddedanswer, "WHAT'S YOUR NAME?")) {
+    else if (strstr(moddedanswer, "WHAT'S YOUR NAME")) {
         printf("My name is Fedora!\n");
     }
     else if (strstr(moddedanswer, "HELP")) {
@@ -31,6 +31,10 @@ int main() {
         printf("What's your name?\n");
         printf("Help - this command\n");
         printf("END\n");
+    }
+    else if (strstr(moddedanswer, "WANNA PLAY RNS")) {
+        printf("Yeah sure!\n");
+        rnpns(moddedanswer);
     }
 
     return 0;
