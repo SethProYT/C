@@ -3,7 +3,6 @@
 #include <ctype.h>
 #include "themind.h"
 
-#define MAX_LENGTH 100
 
 int main() {
     char ans[MAX_LENGTH];

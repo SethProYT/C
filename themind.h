@@ -18,7 +18,7 @@ void capitalizer(char* dest, const char* src) {
 
 void rnpns(char *mv) {
     srand(time(NULL));
-    int r = rand() % 3;
+    int r = rand() % 3 + 1;
     int player;
     // rock is one
     // paper is two
