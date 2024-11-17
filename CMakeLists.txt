@@ -11,5 +11,9 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 set(INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 include_directories(${INCLUDE_DIR})
 
+find_package(CURL REQUIRED)
+
 # Add an executable
 add_executable(THEMIND main.c)
+
+target_link_libraries(THEMIND CURL::libcurl)

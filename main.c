@@ -28,12 +28,21 @@ int main() {
         printf("Current commands:\n");
         printf("What's your age?\n");
         printf("What's your name?\n");
+        printf("Wanna play RNS?\n");
+        printf("What's my...\n");
         printf("Help - this command\n");
         printf("END\n");
     }
     else if (strstr(moddedanswer, "WANNA PLAY RNS")) {
         printf("Yeah sure!\n");
         rnpns(moddedanswer);
+    }
+    else if (strstr(moddedanswer, "WHAT'S MY IP")) {
+        printf("nigga why are you asking\n");
+        whatismyipaddressfedora();
+    }
+    else if (strstr(moddedanswer, "WHAT'S MY...")) {
+        printf("what's your what?\n");
     }
 
     return 0;

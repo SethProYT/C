@@ -5,6 +5,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <time.h>
+#include <curl/curl.h>
 
 #define MAX_LENGTH 1000
 
@@ -70,4 +71,16 @@ void rnpns(char *mv) {
             printf("Invalid input\n");
             break;
     }
+}
+
+void whatismyipaddressfedora() {
+    CURL *curl;
+    CURLcode res;
+    curl = curl_easy_init();
+    curl_easy_setopt(curl, CURLOPT_URL, "https://ident.me");
+    res = curl_easy_perform(curl);
+
+    printf("%d\n", res);
+
+    curl_easy_cleanup(curl);
 }
